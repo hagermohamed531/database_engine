@@ -118,11 +118,15 @@ checkname "table"
 				then
 				echo -e $inserteddata"\c" >> ~/dbstorage/$dbname/database/$tbname
 				inserteddata=""
+	
 				fi
 				#printf $inserteddata;
 				
 			done
 		fi
+	echo "inserted successfuly"
+	usechoose.sh
+	exit
 	fi
 }
 

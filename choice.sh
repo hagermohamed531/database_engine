@@ -8,6 +8,7 @@ clear
 dbengine.sh
 elif [ $choice -eq 8 ]
 then
+echo bye
 exit
 
 else 

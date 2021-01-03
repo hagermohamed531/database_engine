@@ -29,6 +29,8 @@ do
         break;
     fi
 done
+choice.sh
+exit
 
 }
 

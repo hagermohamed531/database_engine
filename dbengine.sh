@@ -14,6 +14,7 @@ echo "			|	2-use database 			|"
 echo "			|	3-show database			|" 
 echo "			|	4-delete database		|"
 echo "			|	5-exit				|"
+echo "			|	6-search				|"
 echo "			|_______________________________________|"
 
 echo "        "
@@ -40,6 +41,9 @@ deletedb.sh
 elif [ $choice -eq 5 ]
 then 
 exit
+elif [ $choice -eq 6 ]
+then 
+searchintable.sh
 else
 dbengine.sh
 fi
