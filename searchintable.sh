@@ -33,6 +33,14 @@ done
 }
 
 searchrow() {
+checkname "database"
+dbname=$name
+if [[ $? == 0 ]]
+then
+    if [[ ! -d ~/dbstorage/$dbname ]] 
+    then
+        echo "this database doesn't exist"
+    else
 checkname "table"
 	#if return is 0 (validname)
 	if [[ $? == 0 ]]
@@ -52,5 +60,7 @@ checkname "table"
             
 		fi
     fi
+fi
+fi
 }
 searchrow
