@@ -36,7 +36,7 @@ clear
 showdb.sh
 elif [ $choice -eq 4 ]
 then 
-echo delete
+deletedb.sh
 elif [ $choice -eq 5 ]
 then 
 exit

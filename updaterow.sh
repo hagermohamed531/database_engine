@@ -131,6 +131,8 @@ checkname "table"
 		if [[ ! -f ~/dbstorage/$dbname/metadata/$tbname ]] || [[ ! -f ~/dbstorage/$dbname/database/$tbname ]]
 		then
 			echo "this table doesn't exist"
+usechoose.sh
+exit
         else
             primarykeyvalue
             
@@ -156,6 +158,8 @@ checkname "table"
                     if [[ $? == 0 ]]
                     then 
                         echo "The row updated successfully !"
+usechoose.sh
+exit
                     fi
                 fi
             fi
